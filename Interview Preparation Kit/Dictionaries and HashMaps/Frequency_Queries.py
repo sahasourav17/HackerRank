@@ -44,4 +44,5 @@ if __name__ == '__main__':
     fptr.write('\n'.join(map(str, ans)))
     fptr.write('\n')
 
+    
     fptr.close()
