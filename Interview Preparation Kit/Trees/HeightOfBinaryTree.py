@@ -53,7 +53,12 @@ def height(root):
     if findHeight(root) > 0:
         return findHeight(root)-1
     return 0
-    
+
+# another implementation
+def height(root):
+    if root is None or (root.left is None and root.right is None):
+        return 0
+    return 1 + max(height(root.left), height(root.right))
 
 
 
